@@ -6,14 +6,22 @@ import { getReservations } from '../ApiCalls'
 class App extends Component {
   constructor() {
     super();
-    this.state ={
+    this.state = {
       reservations: ''
     }
   }
 
   componentDidMount() {
     return getReservations()
-      .then(reservationData => this.setState({reservation: reservationData}))
+      .then(reservationData => this.setState({reservations: reservationData}))
+  }
+
+  displayReservations = () => {
+    if(this.state.reservations){
+      return this.state.reservations.map(reservation => {
+        return <ReservationCard reservation={reservation}/>
+      })
+    }
   }
 
   render() {
@@ -24,7 +32,7 @@ class App extends Component {
 
         </div>
         <div className='resy-container'>
-          <ReservationCard />
+          {this.displayReservations()}
         </div>
       </div>
     )
