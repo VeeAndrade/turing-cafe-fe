@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReservationCard should match the snapshot with all the data passed in correctly 1`] = `
+<section
+  className="reservation-card"
+  key="42"
+>
+  <h3
+    className="reservation-detail"
+  >
+    Vee
+     
+  </h3>
+  <p
+    className="reservation-detail"
+  >
+    06/21
+  </p>
+  <p
+    className="reservation-detail"
+  >
+    7:00
+     pm
+  </p>
+  <p
+    className="reservation-detail"
+  >
+    Number of guest: 
+    3
+     
+  </p>
+  <button
+    className="cancel-reservation-button"
+  >
+    Cancel
+  </button>
+</section>
+`;
