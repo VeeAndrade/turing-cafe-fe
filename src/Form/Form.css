@@ -1,0 +1,23 @@
+.reservation-form {
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+  align-self: center;
+  justify-content: space-evenly;
+}
+
+.name-input,
+.date-input,
+.time-input,
+.numOfGuest-input {
+  width: 15%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.make-reserveration-btn {
+  background-color: teal;
+  color: #fff;
+  width: 15%;
+  /* height: */
+}
