@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ReservationCard from '../ReservationCard/ReservationCard'
+import { getReservations } from '../ApiCalls'
 
 class App extends Component {
   constructor() {
@@ -8,6 +9,11 @@ class App extends Component {
     this.state ={
       reservations: ''
     }
+  }
+
+  componentDidMount() {
+    return getReservations()
+      .then(reservationData => this.setState({reservation: reservationData}))
   }
 
   render() {
