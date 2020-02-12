@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ReservationCard = () => {
+const ReservationCard = ({ reservation }) => {
 return (
-  <section className='reservation-card'>
-    <h3>name</h3>
-    <p>date</p>
-    <p>Number of guest: 5</p>
+  <section key={reservation.id} className='reservation-card'>
+    <h3>{reservation.name} </h3>
+    <p>{reservation.date}</p>
+    <p>Number of guest: {reservation.number} </p>
     <button className='cancel-reservation-button'>Cancel</button>
   </section>
 )
