@@ -1,0 +1,19 @@
+.reservation-card {
+  border: solid 4px #008080;
+  border-radius: 15px;
+  width: 250px;
+  height: 200px;
+  margin-bottom: 40px;
+  background-color:#fff;
+}
+
+.reservation-detail {
+  color: #008080;
+}
+
+.cancel-reservation-button {
+  width: 80%;
+  height: 30px;
+  background-color: #008080;
+  color: #fff;
+}
